@@ -1,0 +1,125 @@
+.footer
+    display: flex
+    background-color: #3a3b5a
+    height: 270px
+    width: 100%
+
+.footer_wrapper
+    display: flex
+    justify-content: space-around
+    margin: 40px auto 0
+
+.footer button
+    display: none
+
+.footer h3
+    color: #dadae0
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 10px
+
+.footer_line
+    position: relative
+    display: flex
+    height: 2px
+    width: 40px
+    background-color: #dadae0
+    margin-bottom: 25px
+
+.footer_nav
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+
+.footer_nav li:not(:last-child)
+    margin-bottom: 15px
+
+.footer_nav a
+    text-transform: uppercase
+    color: #dadae0
+    font-size: 16px
+
+.footer_nav a:hover
+    color: #2bb673
+    cursor: pointer
+
+.footer_contact_tel
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    text-align: center
+    margin-bottom: 20px
+
+.footer_contact_tel img
+    color: #fff
+    margin-right: 10px
+
+.footer_contact_tel p
+    color: #dadae0
+    font-size: 18px
+
+.footer_contact_tel p:hover
+    color: #2bb673
+    transition: .3s
+
+.footer_contact_mail
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    text-align: center
+
+.footer_contact_mail img
+    margin-right: 10px
+
+.footer_contact_mail p
+    color: #dadae0
+    font-size: 18px
+
+
+.footer_contact_mail p:hover
+    color: #2bb673
+    transition: .3s
+
+.footer_social
+    display: flex
+    flex-direction: column
+    flex: 0 0 calc(100% / 4)
+
+.footer_social_block
+    display: flex
+
+.footer_social_item
+    transform: scale(1.5)
+    color: #dadae0
+    width: 15px
+
+.footer_social_item:not(:last-child)
+    margin-right: 25px
+
+.footer_social_item:hover
+    color: #2bb673
+    transition: .3s
+    cursor: pointer
+
+.footer_social_link
+    margin: 15px 25px 0 0
+
+@media (max-width: 1060px)
+    .footer_logo
+        margin-bottom: 20px
+        min-width: 183px
+
+    .footer_nav
+        display: none
+
+    .footer_contact
+        display: none
+
+    .footer_social
+        display: none
+
+    .footer button
+        display: inline-flex
+
+    .footer button img
+        margin-right: 15px

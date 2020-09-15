@@ -1,0 +1,161 @@
+*, :before, :after
+    box-sizing: border-box
+
+body
+    color: #787878
+    font-size: 16px
+    min-width: 320px
+    font-family: 'Gill Sans', sans-serif
+    font-weight: 400
+    background-color: #ffffff
+
+.container
+    max-width: 1200px
+    height: 100%
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+
+.block
+    padding: calc(20px + 2.6vw) 0 0
+
+img
+    max-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+    vertical-align: baseline
+    box-shadow: none
+
+video
+    max-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+
+a
+    text-decoration: none
+
+li
+    list-style: none
+    font-family: "Gill Sans", sans-serif
+
+h1
+    font-weight: 500
+    color: #ffffff
+    font-size: calc(32px + 1.1vw)
+    text-transform: uppercase
+
+h2
+    font-weight: 700
+    color: #ffffff
+    font-size: calc(28px + .7vw)
+    text-transform: uppercase
+    letter-spacing: 1px
+
+h1, h2
+    font-family: 'Coolvetica', sans-serif
+    margin-bottom: calc(15px + .6vw)
+
+h3
+    font-weight: 600
+    color: #505050
+    font-size: 26px
+    text-transform: uppercase
+    margin-bottom: 15px
+    font-family: 'Coolvetica', sans-serif
+    line-height: 1.5
+
+h4
+    color: #505250
+    font-weight: 600
+    font-size: 18px
+    margin-bottom: calc(15px + 0.26vw)
+    font-family: 'Coolvetica', sans-serif
+
+h5
+    color: #505250
+    font-weight: 600
+    font-size: 16px
+    margin-bottom: calc(15px + 0.26vw)
+    font-family: 'Coolvetica', sans-serif
+
+.line
+    position: relative
+    display: flex
+    height: 2px
+    width: 95px
+    background-color: #2bb673
+    margin-bottom: calc(30px + 2.1vw)
+
+ul
+    text-align: justify
+
+.colortext
+    color: #fc635e
+
+.button
+    position: relative
+    z-index: 3
+    display: inline-flex
+    justify-content: center
+    text-align: center
+    padding: 15px
+    background-color: #2bb673
+    border: solid 1px #fff
+    color: #fff
+    border-radius: 5px
+    font-size: 24px
+    text-decoration: none
+    max-width: calc(100px + 9.8vw)
+    text-transform: uppercase
+
+.button:hover
+    background-color: #ed3b3d
+    color: #ffffff
+    transition: .3s
+    cursor: pointer
+
+.button2
+    position: relative
+    z-index: 3
+    display: inline-flex
+    justify-content: center
+    text-align: center
+    padding: 10px
+    background-color: transparent
+    border: solid 1px #2bb673
+    color: #2bb673
+    font-size: 24px
+    text-decoration: none
+    max-width: calc(100px + 7.8vw)
+    text-transform: uppercase
+
+.button2:hover
+    background-color: #2bb673
+    color: #ffffff
+    transition: .3s
+    cursor: pointer
+
+.button3
+    display: inline-flex
+    justify-content: center
+    text-align: center
+    align-items: center
+    padding: 10px
+    background-color: transparent
+    border-top: solid 1px #48a4cd
+    border-bottom: solid 1px #48a4cd
+    border-left: none
+    border-right: none
+    color: #48a4cd
+    font-size: 24px
+    text-decoration: none
+    width: 100%
+
+@media (max-width: 375px)
+    .button2
+        min-width: 170px
+
+    h1
+        font-size: 24px

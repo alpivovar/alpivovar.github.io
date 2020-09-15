@@ -1,0 +1,460 @@
+.header_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 10px auto 0
+
+.header_up
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+.header_down
+    display: flex
+    //justify-content: space-around
+    align-items: center
+    margin-bottom: 20px
+
+.header_contact_social
+    display: flex
+
+.header_social_link
+    transform: scale(1.5)
+    color: #b0b0b0
+
+.header_social_link:hover
+    color: #2bb673
+    transition: .3s
+    cursor: pointer
+
+.header_contact_social_link
+    margin: 15px 25px 0 0
+
+.header_contact_mail
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    text-align: center
+
+.header_contact_mail_2
+    display: none
+
+.header_contact_tel_2
+    display: none
+
+.header_contact_social_2
+    display: none
+
+.header_lang_2
+    display: none
+
+.header_contact_mail img
+    margin-right: 10px
+
+
+.header_contact_mail p
+    color: #b0b0b0
+    font-size: 18px
+
+
+.header_contact_mail p:hover
+    color: #2bb673
+    transition: .3s
+
+
+.header_contact_tel
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: center
+    text-align: center
+
+.header_contact_tel img
+    margin-right: 10px
+
+.header_contact_tel p
+    color: #b0b0b0
+    font-size: 18px
+
+.header_contact_tel p:hover
+    color: #2bb673
+    transition: .3s
+
+.header_lang
+    display: flex
+    align-items: center
+
+.header_lang_block
+    display: flex
+
+.header_lang_block a
+    margin-right: 10px
+    list-style: none
+    color: #b0b0b0
+    font-size: 18px
+
+.header_lang_block a:hover
+    color: #2bb673
+    transition: .3s
+
+.header_nav
+    margin: 0 15px
+
+.header_nav_wrapper
+    display: flex
+    flex-wrap: wrap
+
+.header_nav_item:not(:last-child)
+    margin-right: calc(15px + 1.8vw)
+
+.header_nav_item_link
+    color: #505050
+    font-size: 20px
+    text-transform: uppercase
+    text-decoration: none
+
+.header_nav_item_link:hover
+    color: #2bb673
+    transition: .3s
+
+.header_logo
+    margin-right: 90px
+
+
+.container2
+    text-align: left
+    display: inline-block
+    position: relative
+    width: 100%
+
+header#nav #menuWrapper
+    height: auto
+    display: block
+
+header#nav ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+
+header#nav ul > li
+    position: relative
+    display: inline-block
+    margin: 0
+    padding: 0 15px
+
+header#nav ul > li > a
+    display: block
+    color: #505050
+    font-size: 20px
+    text-transform: uppercase
+    text-decoration: none
+    transition: all .3s ease
+
+header#nav .container2 ul > li > ul
+    position: absolute
+    left: 10px
+    opacity: 0
+    min-width: 200px
+    margin: 0
+    pointer-events: none
+
+header#nav .container2 ul > li > ul > li
+    padding: 0
+    float: left
+    display: block
+    width: 100%
+
+header#nav .container2 ul > li > ul > li > a
+    border-bottom: 0
+    display: block
+    padding: 0 5px
+    color: #fff
+    width: 90%
+    text-transform: none
+
+header#nav .container ul > li > ul
+    opacity: 0
+    display: block
+    perspective: 1000px
+    min-width: inherit
+    width: 200px
+
+li:hover ul.hov
+    animation-duration: 0.3s
+    animation-delay: 0.3s
+
+li:hover ul.hov li
+    animation-direction: normal
+    animation-iteration-count: 1
+    animation-timing-function: ease-in-out
+    background: #333
+    animation-fill-mode: forwards
+
+header#nav ul li:hover a
+    color: #2bb673
+
+header#nav .container ul > li:hover ul
+    opacity: 1
+    top: 24px
+    pointer-events: auto
+
+header#nav .container ul > li > ul .ico:hover,
+header#nav .container ul > li > ul a:hover
+    background-color: rgba(0,0,0,0.3)
+
+header#nav .container ul > li:hover ul
+    top: 45px
+
+#hamburger
+    display: none
+    width: 25px
+    height: 24px
+    position: fixed
+    right: 15px
+    top: 60px
+    cursor: pointer
+
+#hamburger > span
+    background: #e35455
+    display: block
+    width: 100%
+    height: 3px
+    position: relative
+    margin-top: 3px
+    color: #fff
+    transition: all .3s ease
+
+
+#close
+    position: fixed
+    top: 60px
+    right: 13px
+    width: 30px
+    height: 30px
+    z-index: 1200
+    display: none
+    cursor: pointer
+
+#close > span, #close > span::after
+    content: ""
+    display: block
+    width: 4px
+    height: 100%
+    background: #eee
+    position: absolute
+    left: 50%
+    margin-left: -3px
+    transform: rotate(45deg)
+
+#close > span::after
+    transform: rotate(-90deg)
+
+
+#close:hover > span,
+#close:hover > span::after
+    background: #ccc
+
+#hamburger:hover > span,
+#hamburger:hover > span::after,
+#hamburger:hover > span::before
+    background: rgba(176,176,176,0.5)
+
+
+@media (max-width: 1060px)
+    .header_up
+        display: none
+
+    .header_down
+        align-items: self-start
+
+    .header_contact_mail_2
+        display: flex
+        justify-content: space-around
+        align-items: center
+        text-align: center
+        border-bottom: 1px solid #555
+        padding: 15px 0
+
+    .header_contact_mail_2 img
+        margin-right: 10px
+
+
+    .header_contact_mail_2 p
+        color: #b0b0b0
+        font-size: 18px
+
+
+    .header_contact_mail_2 p:hover
+        color: #2bb673
+        transition: .3s
+
+
+    .header_contact_tel_2
+        display: flex
+        justify-content: space-around
+        align-items: center
+        text-align: center
+        border-bottom: 1px solid #555
+        padding: 15px 0
+
+    .header_contact_tel_2 img
+        margin-right: 10px
+
+
+    .header_contact_tel_2 p
+        color: #b0b0b0
+        font-size: 18px
+
+
+    .header_contact_tel_2 p:hover
+        color: #2bb673
+        transition: .3s
+
+    .header_contact_social_2
+        display: flex
+        justify-content: center
+        border-bottom: 1px solid #555
+        padding: 0 0 15px
+
+    .header_lang_2
+        display: flex
+        align-items: center
+        justify-content: center
+        border-bottom: 1px solid #555
+        padding: 15px 0
+
+    .container2
+        top: 90px
+
+    #hamburger
+        display: block
+        transition: all .3s ease
+        transform: translateY(0)
+
+    #close
+        transition: all .3s ease
+        transform: translateX(50px)
+        display: block
+
+    header#nav
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 1005
+        background-color: #e3e3e3
+
+    header#nav ul
+        display: none
+        opacity: 0
+
+    header#nav ul > li
+        float: none
+        border-bottom: 1px solid #555
+        display: block
+        padding: 0
+
+    header#nav ul > li:last-child
+        border-bottom: none !important
+
+    header#nav ul > li:last-child
+        border-bottom: none
+
+    header#nav ul > li > a
+        display: block
+        text-align: left
+        padding: 10px 0
+        color: #2bb673
+        width: 100%
+        margin: 0 auto
+        border-bottom: none
+
+    header#nav .container ul > li > ul
+        top: 0
+        padding: 2px 0
+
+    header#nav.showNav
+        background-color: #333
+        height: calc(100%)
+
+    header#nav.showNav #menuWrapper
+        height: 300px
+        overflow-y: auto
+
+    header .contained
+        padding-top: 5px
+
+    header#nav .contained
+        height: 50px
+
+    header#nav.showNav .contained
+        height: auto
+
+    header#nav.showNav .container
+        height: auto
+        float: left
+        display: block
+        width: 100%
+
+    header#nav.showNav ul
+        opacity: 1
+        display: block
+        position: static
+        padding: 0 5%
+        width: 100%
+
+    header#nav.showNav #hamburger
+        transform: translateX(50px)
+
+    header#nav.showNav #close
+        transform: translateX(0)
+
+    header#nav ul:first-child
+        width: 100%
+        padding: 0 2%
+        float: left
+
+    header#nav ul li
+        display: block
+        clear: both
+        overflow: hidden
+        width: 100%
+
+    header#nav .container ul > li > ul
+        position: static
+        opacity: 1
+        pointer-events: auto
+        display: block
+        width: 100%
+        float: left
+        margin: 0
+        padding: 0
+
+    header#nav .container ul > li > ul > li, header#nav .container ul > li > ul
+        border: none !important
+        opacity: 1 !important
+        display: block !important
+        transform: translate(0,0) rotate(0) !important
+        animation-play: initial !important
+
+    header#nav .container ul > li > ul > li:hover,
+    header#nav .container ul > li:hover,
+    header#nav .container ul > li:hover a,
+    header#nav .container ul > li > ul .ico:hover
+        background-color: transparent
+        border-bottom: none
+        color: #fff
+
+    header#nav ul > li > a:hover
+        background-color: transparent
+        border-bottom: none
+
+@media (max-width: 375px)
+    .header_contact_mail_2 p
+        font-size: 14px
+
+    .header_contact_tel_2 img
+        margin-right: 0

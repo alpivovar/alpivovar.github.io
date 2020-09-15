@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+    include ../includes/_head
+
+    body.home
+        include ../includes/_header
+        main.main_content
+
+            section.prod_cat__section_1
+                div.container
+                    div.prod_cat__section_1_wrapper
+                        div.prod_cat__section_1_item2
+                            h1 Контакти
+                img.about_us__section_1_img(src="img/about_us__img1.png")
+            section.contact__section_2.block
+                div.container
+                    div.contact__section_2_wrapper
+                        div.contact__section_2_block1
+                            div.contact__section_2_item
+                                div.contact__section_2_item_img
+                                    img(src="img/contact__img1.png")
+                                div.contact__section_2_item_text
+                                    p
+                                        span Адрес:
+                                        br
+                                        | 10001, м. Житомир,
+                                        br
+                                        | вулиця Михайла Грушевського, 102
+                            div.contact__section_2_item
+                                div.contact__section_2_item_img
+                                    img(src="img/contact__img2.png")
+                                div.contact__section_2_item_text
+                                    p
+                                        span Тел.:
+                                        br
+                                        | +38 (097) 262-75-46
+                            div.contact__section_2_item
+                                div.contact__section_2_item_img
+                                    img(src="img/contact__img3.png")
+                                div.contact__section_2_item_text
+                                    p
+                                        span E-mail:
+                                        br
+                                        | kombikorm.zt@gmail.com
+                        div.contact__section_2_block2
+                            h2 Напишіть нам
+                            div.line
+                            form.contact__form(action="/")
+                                div.contact__form_block1
+                                    div.contact__form_item
+                                        h4 Ім'я
+                                            span *
+                                        input(type="name", pattern="^[А-Яа-яЁё\\s]+$", placeholder="Введіть Ваше ім'я")
+                                    div.contact__form_item
+                                        h4 E-mail
+                                            span *
+                                        input(type="e-mail", pattern="[A-Za-z]{8,}", placeholder="Введіть Ваш E-mail")
+                                    div.contact__form_item
+                                        h4 Телефон
+                                            span *
+                                        input(type="tel", pattern="+38-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}", placeholder="Введіть Ваш телефон")
+                                div.contact__form_block2
+                                    div.contact__form_message
+                                        h4 Повідомлення
+                                            span *
+                                        textarea(placeholder="Введіть Ваше повідомлення")
+                            button.button2 Надіслати
+
+
+
+
+        include ../includes/_map
+        include ../includes/_footer
+        include ../includes/_scripts
