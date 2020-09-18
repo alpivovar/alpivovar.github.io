@@ -295,7 +295,7 @@ textarea.form-control {
     text-align: center;
 }
 .calltoaction {
-    background: url(../images/item-3.jpg);
+    background: url(../images/item-4.jpg);
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -397,23 +397,38 @@ textarea.form-control {
  * Servise
 /* ---------------------------------------------- */
 
-.iconbox {
-	background: #fff;
-	border-bottom: 1px solid #d4d4d4;
-	text-align: center;
-	padding: 40px 20px;
-	margin: 0 0 20px;
+/*.iconbox {*/
+/*	background: #fff;*/
+/*	border-bottom: 1px solid #d4d4d4;*/
+/*	text-align: center;*/
+/*	padding: 40px 20px;*/
+/*	margin: 0 0 20px;*/
+/*}*/
+
+/*.iconbox-icon {*/
+/*	margin: 0 0 15px;*/
+/*	font-size: 32px;*/
+/*	color: #222;*/
+/*}*/
+
+/*.iconbox-title {*/
+/*	margin: 0 0 15px;*/
+/*	padding: 0;*/
+/*}*/
+
+.about_me{
+	display: flex;
+	justify-content: space-between;
 }
 
-.iconbox-icon {
-	margin: 0 0 15px;
-	font-size: 32px;
-	color: #222;
+.about_me_img{
+	width: 40%;
+	margin-right: 100px;
 }
 
-.iconbox-title {
-	margin: 0 0 15px;
-	padding: 0;
+.about_me_text{
+	width: 60%;
+	font-size: 16px;
 }
 
 /* ---------------------------------------------- /*
@@ -480,6 +495,8 @@ textarea.form-control {
 }
 
 .social-links {
+	display: flex;
+	justify-content: space-around;
 	list-style: none;
 	padding: 0;
 	margin: 0 0 20px;
@@ -501,12 +518,11 @@ textarea.form-control {
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color: rgba(255, 255, 255, .2);
 }
 
 .social-links a:hover {
 	border: 1px solid rgba(255, 255, 255, .5);
-	color: rgba(255, 255, 255, .8);
+	color: grey;
 }
 
 /* ---------------------------------------------- /*
@@ -741,7 +757,7 @@ textarea.form-control {
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: auto;
+	height: 214px;
 	max-width: 100%;
 	opacity: 0.8;
 }
