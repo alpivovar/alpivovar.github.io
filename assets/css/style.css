@@ -676,33 +676,6 @@ textarea.form-control {
 	width: 200px;
 }
 
-/* ---------------------------------------------- /*
- * Media
-/* ---------------------------------------------- */
-
-@media (max-width: 767px) {
-
-	.calltoaction {
-		text-align: center;
-	}
-
-}
-
-@media (max-width: 480px) {
-
-	h1 {
-		font-size: 34px;
-		letter-spacing: 3px;
-	}
-
-	h2 {
-		font-size: 24px;
-		margin: 0 0 30px;
-		letter-spacing: 3px;
-	}
-
-}
-
 
 /*--------------------------------*/
 /***** Portfolio Common style *****/
@@ -962,6 +935,58 @@ figure.effect-bubba:hover p {
 
 	.cbp-qtrotator img {
 		width: 80px;
+	}
+
+}
+
+/* ---------------------------------------------- /*
+ * Media
+/* ---------------------------------------------- */
+
+@media (max-width: 767px) {
+
+	.calltoaction {
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 34px;
+		letter-spacing: 3px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin: 0 0 30px;
+		letter-spacing: 3px;
+	}
+
+	.about_me{
+		flex-direction: column;
+	}
+
+	.about_me_img{
+		width: 86%;
+		margin: 0 25px 25px;
+	}
+
+	.about_me_text{
+		width: 86%;
+		margin: 0 25px;
+		text-align: justify;
+	}
+
+	.about_me_brif{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pfblock{
+		padding: 50px 0 100px;
 	}
 
 }
