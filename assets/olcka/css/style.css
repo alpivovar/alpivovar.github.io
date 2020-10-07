@@ -262,7 +262,7 @@ li{
 	z-index: 5;
 	background-image: url(../img/section_1_img1.png);
 	min-height: calc(500px + 31.3vw);
-	background-position: right;
+	background-position: -330px 0px;
 }
 
 .section_1_item2{
