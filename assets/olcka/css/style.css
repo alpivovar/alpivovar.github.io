@@ -261,7 +261,7 @@ li{
 	position: relative;
 	z-index: 5;
 	background-image: url(../img/section_1_img1.png);
-	min-height: calc(500px + 31.3vw);
+	min-height: calc(600px + 31.3vw);
 	background-position: -330px 0px;
 }
 
